@@ -1,0 +1,28 @@
+/*
+hwk8.css
+Allyson Morgenthal
+Date created: 7/11/18
+Date modified: 7/11/18
+*/
+
+img {
+	float: left;
+	height: 640px;
+	width: 480px;
+	border: blue double 5px;
+}
+.caption {
+	font-size: 20pt;
+	font-family: Verdana;
+	color: white;
+	background-color: lightblue;
+
+}
+h1 {
+	font-family: Verdana;
+	font-size: 30pt; 
+	color: white;
+}
+html {
+	background-color: lightblue;
+}

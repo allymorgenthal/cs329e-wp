@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homework 7</title>
+</head>
+
+<body>
+	<h1> Make an Account </h1>
+	<form id = "registerForm" action = "" method = "post">
+	<table>
+		<tr>
+			<td> Username </td>
+			<td> <input type = "text" name = "username" size = "20"/></td>
+		</tr>
+		<tr>
+			<td> Password </td>
+			<td> <input type = "text" name = "password" size = "20"/></td>
+		</tr>
+		<tr>
+			<td> Confirm Password </td>
+			<td> <input type = "text" name = "confirmPassword" size = "20"/></td>
+		</tr>
+		<tr>
+			<td><input type = "button" value = "Register" name = "registerBtn"/></td>
+			<td><input type = "reset" value = "Clear"/></td>
+		</tr>
+	</table>
+	</form>
+
+	<script type = "text/javascript">
+	<!--
+		document.getElementById("registerForm").registerBtn.onclick = register;
+		function register() {
+			var elt = document.getElementById("registerForm");
+			var u = elt.username.value
+			var p = elt.password.value
+			var p2 = elt.confirmPassword.value
+			var re1 = /^[A-Za-z][A-Za-z0-9]{5,9}$/
+			var re2 = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{6,10}$/
+			if ((re1.exec(u)) === null) {
+				alert("Input Invalid");
+			} else if ((re2.exec(p)) === null) {
+				alert("Input Invalid");
+			} else if (p !== p2) {
+				alert("Input Invalid")
+			} else {
+				alert("Passed Validation")
+			}
+		}
+
+	// -->
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,378 @@
+/*
+advancedScanners.css
+Allyson Morgenthal
+Date Created - July 6 2018
+Date Modified -July 6 2018
+*/
+
+h1 img {
+	height: 200px;
+	width: 200px;
+	border-radius: 130px;
+	float: none;
+}
+h1 {
+	color: red;
+	position: absolute;
+	vertical-align: middle;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 65px;
+	font-family: Garamond;
+}
+.navigation {
+	background-image: url("brain3.png");
+	top: 280px;
+	height: 150px;
+	width: 100%;
+	vertical-align: middle;
+	font-family: Garamond;
+	font-size: 20px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	overflow: hidden;
+}
+
+h2 {
+	color: red;
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	text-align: center;
+	font-family: Garamond;
+	font-size: 30px;
+}
+.footer {
+	top: 1000px; 
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-family: Garamond;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	color: gray;
+}
+.bio1 {
+	top: 450px;
+	position: absolute;
+	width: 600px;
+	left: 250px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+	line-height: 40px;
+}
+.bio2 {
+	top: 650px;
+	position: absolute;
+	width: 550px;
+	left: 700px;
+	font-family: Garamond;
+	font-size: 30px;
+	color: gray;
+	line-height: 40px;	
+}
+.contact {
+	top: 850px;
+	position: absolute;
+	width: 100%;
+	font-family: Garamond;
+	font-size: 35px;
+	color: gray;
+	text-align: center;
+}
+.contact a {
+	font-size: 20px;
+}
+.contactForm p {
+	top: 120px;
+	position: absolute;
+	width: 600px;
+	left: 200px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+	line-height: 40px;
+	border-right: 1px solid;		
+}
+.form {
+	top: 140px;
+	position: absolute;
+	width: 600px;
+	left: 830px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+	line-height: 40px;
+}
+#email {
+	width: 300px;
+}
+#subject {
+	width: 300px;
+}
+#message {
+	width: 300px;
+	height: 100px;
+}
+.story1 {
+	top: 380px;
+	position: absolute;
+	left: 150px;
+	width: 300px;
+	font-family: Garamond;
+	font-size: 22px;
+	text-align: center;
+	color: gray;
+}
+.story2 {
+	top: 380px;
+	position: absolute;
+	left: 570px;
+	width: 300px;
+	font-family: Garamond;
+	font-size: 22px;
+	text-align: center;
+	color: gray;
+}
+.story3 {
+	top: 380px;
+	position: absolute;
+	left: 1000px;
+	width: 300px;
+	font-family: Garamond;
+	font-size: 22px;
+	text-align: center;
+	color: gray;
+}
+.story4 {
+	top: 700px;
+	position: absolute;
+	left: 300px;
+	width: 400px;
+	font-family: Garamond;
+	font-size: 20px;
+	text-align: justify;
+	color: gray;
+}
+.story5 {
+	top: 740px;
+	position: absolute;
+	left: 750px;
+	width: 400px;
+	font-family: Garamond;
+	font-size: 20px;
+	text-align: justify;
+	color: gray;
+}
+.wework p {
+	top: 400px;
+	position: absolute;
+	left: 300px;
+	width: 500px;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.wework img {
+	top: 400px;
+	position: absolute;
+	left: 900px;
+	width: 200px;
+	height:200px;
+}
+.wework h2 {
+	top: 380px;
+	position: absolute;
+	left: -300px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+}
+.hottest2018 p {
+	top: 710px;
+	position: absolute;
+	left: 300px;
+	width: 500px;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.hottest2018 img {
+	top: 670px;
+	position: absolute;
+	left: 900px;
+	width: 200px;
+	height:150px;
+}
+.hottest2018 h2 {
+	top: 680px;
+	position: absolute;
+	left: -150px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+}
+.newventure p {
+	top: 970px;
+	position: absolute;
+	left: 300px;
+	width: 500px;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.newventure img {
+	top: 950px;
+	position: absolute;
+	left: 900px;
+	width: 200px;
+	height:150px;
+}
+.newventure h2 {
+	top: 880px;
+	position: absolute;
+	left: -80px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+}
+.footer3 {
+	top: 1600px; 
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-family: Garamond;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	color: gray;
+}
+.temple img {
+	top: 1180px; 
+	position: absolute;
+	left: 900px;
+	width: 200px;
+	height:150px;
+}
+.temple h2 {
+	top: 1200px;
+	position: absolute;
+	left: -130px;
+	font-family: Garamond;
+	font-size: 20px;
+	color: gray;
+}
+.temple p {
+	top: 1350px;
+	position: absolute;
+	left: 300px;
+	width: 500px;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.dropdown {
+	overflow: hidden;
+	font-family: Garamond;
+	float: left;
+	color: white;
+}
+.navigation a {
+	position: relative;
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	color: white;
+}
+
+.dropdown .dropbtn {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 14px 16px;
+	font-family: Garamond;
+	font-size: 20px;
+	position: absolute;
+	background-color: inherit;
+	color: white;
+}
+
+.navigation a:hover, .dropdown:hover, .dropbtn:hover {
+	background-color: red;
+}
+.dropoptions {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+}
+
+.dropoptions a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+.dropoptions a:hover {
+	background-color: red;
+}
+.show {
+	display: block;
+}
+.jeff {
+	top: 450px;
+	position: absolute;
+	font-family: Garamond;
+	width: 500px;
+	font-size: 18px;
+	color: gray;
+	left: 300px;
+}
+
+.jeff img {
+	top: -20px;
+	position: absolute;
+	left: 550px;
+	width: 200px;
+	height:200px;
+}
+
+.aaron {
+	top: 800px;
+	position: absolute;
+	font-family: Garamond;
+	width: 500px;
+	font-size: 18px;
+	color: gray;
+	left: 300px;
+}
+.aaron img {
+	top: -50px;
+	position: absolute;
+	left: 550px;
+	width: 200px;
+	height:200px;
+}
+.ally {
+	top: 430px;
+	position: absolute;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.dalia {
+	top: 480px;
+	position: absolute;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+.george {
+	top: 530px;
+	position: absolute;
+	font-family: Garamond;
+	font-size: 18px;
+	color: gray;
+}
+

@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Verdana;
+	margin: 0;
+}
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+.slideshow-container {
+	position: absolute;
+	top: 500px;
+	margin: auto;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}

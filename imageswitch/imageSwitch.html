@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>
+		<script type = "text/javascript">
+
+
+			var imageArray = new Array();
+			imageArray[0] = createImg("family.jpg",400,300);
+			imageArray[1] = createImg("sister.jpg",400,300);
+			imageArray[2] = createImg("friends.jpg",400,300);
+
+			function createImg(src, height, width) {
+				var img = document.createElement("img");
+				img.src = src;
+				img.height = height;
+				img.width = width;
+
+				return img;
+			};
+
+			var index = Math.floor(Math.random() * imageArray.length);
+
+			document.body.appendChild(imageArray[index]).style.border = "blue double 2px";
+
+		</script>
+	</p>
+</body>
+</html>
+

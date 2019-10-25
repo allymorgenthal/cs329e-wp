@@ -1,0 +1,116 @@
+/*
+
+File: hwk5.css
+Austhor: Allyson Morgenthal
+Date Created: Jun 27 2018
+Date Modified: Jun 27 2018
+
+*/
+
+html {
+	margin: 10px;
+	padding: 5px;
+}
+body {
+	margin: 2px;
+	padding: 2px;
+	font-family: Courier;
+	line-height: : 200%;
+}
+.header { 
+	position: abolsute;
+	top: 0px;
+	margin: 5px;
+	max-height: 100px;
+	width: fill;
+	border-bottom: 2px double;
+	vertical-align: middle;
+	text-align: center;
+}
+h1 {
+	margin: 0px;
+	padding:5px;
+}
+.left {
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	width: 200px;
+	height: 900px;
+	margin: 5px;
+	padding-top: 2px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	text-align: center; 
+	border-right: 1px dotted;
+}
+.right {
+	position: absolute;
+	top: 120px;
+	left: 1000px;
+	width: 400px;
+	height: 900px;
+	margin: 5px;
+	padding-top: 2px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	text-align: center;
+	border-left: 1px dotted; 
+}
+.right img {
+	height: 200px;
+	width: 300px;
+	vertical-align: middle;
+}
+.centralRight {
+	position: absolute;
+	left: 275px;
+	width: 400px;
+	border-right: 1px dotted;
+	height: 300px;
+
+}
+.centralLeft {
+	position: absolute;
+	left: 685px;
+	width: 320px;
+	border-right: 1px dotted;
+	height: 300px;
+
+}
+.centralLeft img {
+	height: 200px;
+	width: 300px;
+	vertical-align: middle;
+	
+}
+.centralBottom {
+	position:absolute;
+	top: 500px;
+	border-top: 1px dotted;
+	height: 300px;
+	clear: both;
+	left: 275px;
+	width: 700px;
+
+}
+.footer {
+	position: absolute;
+	top: 1075px;
+	border-top: 1px dotted;
+	width: 1400px;
+	clear: all;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

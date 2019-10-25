@@ -1,0 +1,126 @@
+/*
+File: exam1.css
+Author: Allyson Morgenthal
+Date Created: Jun 29 2018
+Date Modified: Jun 29 2018
+*/
+
+html {
+	margin: 10px;
+	padding: 5px;
+	max-width: 800px;
+	max-height: 1000px;font-family: Gerogia;
+}
+.names {
+	text-align: right;
+	font-size: 9pt;
+}
+h1 {
+	margin: 5px;
+}
+.header { 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 5px;
+	max-height: 200px;
+	width: 800px;
+	border-bottom: 2px double;
+	vertical-align: middle;
+	text-align: left;
+	font-family: Georgia;
+	text-align: center;
+}
+.footer{
+	position: absolute;
+	top: 800px;
+	left: 0px;
+	margin: 5px;
+	max-height: 200px;
+	width: 800px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: Georgia;
+	border-top: 2px double;
+}
+.promo {
+	position: absolute;
+	top: 160px;
+	left: 580px;
+	width: 200px;
+	height: 620px;
+	margin: 5px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center; 
+	border-left: 1px dotted;
+	font-family: Georgia;
+}
+.promo img {
+	position: absolute;
+	width: 180px;
+	height: 200px;
+	vertical-align: middle;
+	left: 20px;
+}
+.body {
+	position: absolute;
+	top: 160px;
+	left: 175px;
+	width: 380px;
+	height: 620px;
+	margin: 5px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center; 
+	border-left: 1px dotted;
+	border-right: 1px dotted;
+	font-family: Georgia;
+}
+.navigation {
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	width: 150px;
+	height: 620px;
+	margin: 5px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-right: 1px dotted;
+}
+.body img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+#beach {
+	position: absolute;
+	top: 440px;
+	left: 10px;
+}
+#mountain {
+	position: absolute;
+	top: 440px;
+	left: 155px;
+}
+#safari {
+	position: absolute;
+	top: 440px;
+	left: 290px;
+}
+.navigation img {
+	position: absolute;
+	top: 10px;
+	width: 150px;
+	height: 100px;
+}
+
+
+
+

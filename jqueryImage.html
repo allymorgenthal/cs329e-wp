@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lan ="en">
+<meta charset = "utf-8">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script> 
+		function print (index, value) {
+			console.log(index + " " + value.image + " " + value.thumb);
+		}
+
+		function dostuff(data) {
+			console.log('success');
+			$.each(data, print);
+		}
+
+		function ready() {
+			console.log('Hello');
+			$.ajax({dataType: "json",
+					url: "images.json",
+					success: dostuff});
+		}
+		$('document').ready(ready);
+	</script>
+</html>

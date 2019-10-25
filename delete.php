@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<?php
+
+function start() {
+        viewTable();
+        $host = "summer-2018.cs.utexas.edu";
+        $user = "allysonm";
+        $pwd = "die3Dead&basin";
+        $dbs = "cs329e_allysonm";
+        $port = "3306";
+
+        $connect = mysqli_connect ($host, $user, $pwd, $dbs, $port);
+
+        if (empty($connect))    {
+                die("mysqli_connect failed: " . mysqli_connect_error());
+        }
+
+        print "Connected to ". mysqli_get_host_info($connect) . "<br /><br />\n";
+
+        $table = "STUDENTS";
+
+        $id = $_POST["studentid"];
+        $last = $_POST["lastname"];
+        $first = $_POST["firstname"];
+        $major = $_POST["major"];
+        $gpa = $_POST["gpa"];
+
+        if ($id != "") {
+                mysqli_query($connect, "DELETE FROM $table WHERE id = $id");
+                echo("deleted");
+                echo "<a href = \"login.php\">Back to Login</a>";
+        }
+
+        if ($last != "" && $first != "") {
+                echo ("empty field");
+        }
+}
+
+function viewTable() {
+        print<<<DELETEPAGE
+                <form method = "post">
+                <table>
+                        <tr>
+                                <td>ID</td>
+                                <td><input type = "text" name = "ID"></td>
+                        </tr>
+                        <tr>
+                                <td><input type = "submit" name = "submit" value = "Delete"></td>
+                                <td><input type = "reset" name = "reset" value = "Reset"></td>
+                        </tr>
+                </table>
+                </form>
+DELETEPAGE;
+        mysqli_close($connect);
+}
+?>
+<html>
+<head>
+        <title> Delete Page</title>
+<head>
+<body>
+        <h3>Delete Page</h3>
+<?php start(); ?>
+</body>
+</html>

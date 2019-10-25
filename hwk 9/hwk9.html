@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homework 9 </title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" title = "basic style" type = "text/css" href = "./hwk9.css" media = "all"/>
+</head>
+<body onload = "slideshow()">
+	<h1> Travel Show </h1>
+
+		<div class = "slide">
+			<img src = "agra_fort.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "ajanta_ellora.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "akshardham_temple.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "char_minar.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "hawa_mahal.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "mysore_palace.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "sun_temple.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "taj_mahal.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "victoria_memorial.jpg">
+		</div>
+
+		<div class = "slide">
+			<img src = "mumbai.jpg">
+		</div>
+
+
+	<script type = "text/javascript">
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(slideshow, 3000);
+
+		function slideshow() {
+			slides[currentSlide].className = 'slide';
+			currentSlide = (currentSlide + 1)%slides.length;
+			slides[currentSlide].className = 'slideShowing';
+		}
+
+	</script>
+</body>
+</html>

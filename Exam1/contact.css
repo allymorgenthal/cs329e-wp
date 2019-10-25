@@ -1,0 +1,14 @@
+/*
+File: contact.css
+Author: Allyson Morgenthal
+Date Created: Jun 29 2018
+Date Modified: Jun 29 2018
+*/
+
+html {
+	margin: 10px;
+	padding: 5px;
+	max-width: 800px;
+	max-height: 1000px;
+	font-family: Georgia;
+}

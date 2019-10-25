@@ -1,0 +1,10 @@
+input {
+	width: 50px;
+	height: 50px;
+	background: blue;
+	color: white;
+	font-size: 18pt;
+}
+h1 {
+	color: blue;
+}

@@ -1,0 +1,11 @@
+.slide {
+	display: none;
+}
+.slideShowing {
+	display: block;
+}
+h1 {
+	font-family: Verdana;
+	font-size: 25pt;
+	color: lightblue;
+}

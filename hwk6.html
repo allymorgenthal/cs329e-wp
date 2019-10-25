@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homework 6</title>
+</head>
+
+<body>
+	<h1> Mortgage Calculator </h1>
+	<form id = "mortgageForm" action = "" method = "post">
+	<table>
+		<tr>
+			<td> Principle Amount </td>
+			<td> <input type = "text" name = "principle" size = "20"/></td>
+		</tr>
+
+		<tr>
+			<td> Yearly percentage interest rate </td>
+			<td> <input type = "text" name = "yearInterest" size = "20"/></td>
+		</tr>
+
+		<tr>
+			<td>Loan term in months</td>
+			<td> <input type = "text" name = "monthsTerm" size = "20"/></td>
+		</tr>
+
+		<tr>
+			<td><input type = "button" value = "Calculate" name = "calcBtn"/></td>
+			<td><input type = "reset" value = "Clear"/></td>
+		</tr>
+
+	    <tr>
+            <td> Monthly Payment</td>
+            <td> <input type = "text" name = "payment" size = "20" value = "" /></td>
+        </tr>
+
+        <tr>
+        	<td> Sum of all Payments</td>
+        	<td> <input type = "text" name = "sum" size = "20" value = ""/></td>
+        </tr>
+
+        <tr> 
+        	<td>Total Interest Paid</td>
+        	<td><input type = "text" name = "paid" size = "20" value = ""/></td>
+        </tr>
+
+	</table>
+	</form>
+
+<script type = "text/javascript">
+<!--
+
+   	document.getElementById("mortgageForm").calcBtn.onclick = calcMorg;
+   	function calcMorg () {
+
+    	var monthlyPayment = "";
+    	var elt = document.getElementById("mortgageForm");
+     	var P = parseFloat (elt.principle.value);
+     	var r = (((parseFloat (elt.yearInterest.value)) / 100) / 12);
+     	var n = Math.round(parseFloat (elt.monthsTerm.value));
+     	monthlyPayment = P * r / (1 - (1 / (Math.pow((1 + r), n))));
+     	elt.payment.value = monthlyPayment.toFixed(2);
+     	elt.sum.value = (monthlyPayment * n).toFixed(2);
+     	elt.paid.value = (elt.sum.value * r).toFixed(2);
+
+   }
+
+   document.getElementById("mortgageForm").principle.onchange = validate1 
+   function validate1 () {
+   		var re = /^(?!0\d)\d*(\.\d+)?$/
+		var elt = document.getElementById("mortgageForm");
+		if ((re.exec(elt.principle.value)) === null) {
+			alert("Your entry must be POSITIVE and a NUMBER!");
+		}
+   }
+
+   document.getElementById("mortgageForm").monthsTerm.onchange = validate2
+   function validate2 () {
+   		var re = /^(?!0\d)\d*(\.\d+)?$/
+		var elt = document.getElementById("mortgageForm");
+		if ((re.exec(elt.monthsTerm.value)) === null) {
+			alert("Your entry must be POSITIVE and a NUMBER!");
+		}
+   }
+
+   document.getElementById("mortgageForm").yearInterest.onchange = validate3 
+   function validate3 () {
+   		var re = /^(?!0\d)\d*(\.\d+)?$/
+		var elt = document.getElementById("mortgageForm");
+		if ((re.exec(elt.yearInterest.value)) === null) {
+			alert("Your entry must be POSITIVE and a NUMBER!");
+		}
+   }
+   
+// -->
+</script>
+</body>
+</html>

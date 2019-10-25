@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homework 8 </title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" title = "basic style" type = "text/css" href = "./hwk8.css" media = "all"/>
+</head>
+
+<body>
+	<h1> Galaxies </h1>
+
+	<input class = "caption" id = "caption" type = "text" name = "caption" size = "30" value = ""/></td>
+
+	<script type = "text/javascript">
+
+		window.onload = loadImage
+		function loadImage() {
+
+			var imageArray = new Array();
+			imageArray[0] = createImg("GalaxyCluster.jpg");
+			imageArray[1] = createImg("M104.jpg");
+			imageArray[2] = createImg("NGC1300.jpg");
+			imageArray[3] = createImg("InteractingGalaxies.jpg");
+			imageArray[4] = createImg("M51.jpg");
+			imageArray[5] = createImg("NGC6217.jpg");
+
+
+			function createImg(src) {
+				var img = document.createElement("img");
+				img.src = src;
+				return img;
+			};
+
+			var captionArray = new Array();
+			captionArray[0] = "Galaxy Cluster";
+			captionArray[1] = "M 104";
+			captionArray[2] = "NGC 1300";
+			captionArray[3] = "Interacting Galaxies";
+			captionArray[4] = "M 51";
+			captionArray[5] = "NGC 6217";
+
+
+			var index = Math.floor(Math.random() * imageArray.length);
+			document.body.appendChild(imageArray[index]);
+			var cap = document.getElementById("caption");
+			cap.value = captionArray[index];
+
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lan ="en">
+<meta charset = "utf-8">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<script>
+		/* knows that with just the $ its the ready() function and will call when the page loads */
+
+		$(function ready() {
+			alert("Hello World");
+		});
+
+		/* OR */
+
+		function ready() {
+			alert("Hello World");
+		}
+		$("document").ready(ready);
+
+	</script>
+</html>
+

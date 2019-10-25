@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12 {
+		float: left;
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		margin: 0px;
+	}
+
+</style>
+
+<script>
+	function allowDrop(ev) {
+		ev.preventDefault()
+	}
+
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+
+	}
+
+	function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text")
+		ev.target.appendChild(document.getElementById(data));
+	}
+
+	counter=0;
+	var time = setInterval(timer,1000);
+	function timer() {
+		++ counter;
+		var hour = Math.floor(counter/3600);
+		var minute = Math.floor((counter - hour*3600)/60);
+		var seconds = counter - ((hour*3600)+(minute*60));
+		document.getElementById("txt").innerHTML = hour + ":" + minute +":"+seconds;
+	}
+
+	function imageLoad() {
+		imageSet1 = ["img1-1.jpg", "img1-2.jpg", "img1-3.jpg", "img1-4.jpg", "img1-5.jpg", "img1-6.jpg", "img1-7.jpg", "img1-8.jpg", "img1-9.jpg", "img1-10.jpg", "img1-11.jpg", "img1-12.jpg"];
+		imageSet2 = ["img2-1.jpg", "img2-2.jpg", "img2-3.jpg", "img2-4.jpg", "img2-5.jpg", "img2-6.jpg", "img2-7.jpg", "img2-8.jpg", "img2-9.jpg", "img2-10.jpg", "img2-11.jpg", "img2-12.jpg"];
+		imageSet3 = ["img3-1.jpg", "img3-2.jpg", "img3-3.jpg", "img3-4.jpg", "img3-5.jpg", "img3-6.jpg", "img3-7.jpg", "img3-8.jpg", "img3-9.jpg", "img3-10.jpg", "img3-11.jpg", "img3-12.jpg"]
+
+		setIndex = Math.floor(Math.random() * 2);
+		if (setIndex == 0) {
+			imageSet = imageSet1;
+		} 
+		if (setIndex == 1) {
+			imageSet = imageSet2;
+		} 
+		if (setIndex == 2) {
+			imageSet = imageSet3;
+		} 
+		randomize(imageSet);
+
+		function randomize(imageSet) {
+    		imageSet.sort(function(a, b){return 0.5 - Math.random()});
+		}
+		console.log(imageSet)
+
+		puzzlePieces = document.getElementsByClassName("piece");
+		for (var i = 0; i < puzzlePieces.length; i++) {
+			puzzlePieces[i].src = imageSet[i].toString();
+		}
+
+	}
+
+
+</script>
+</head>
+
+<body onload = "imageLoad()">
+	<h1> Jig-Saw Puzzle</h1>
+	<div id = "txt"></div>
+	<div id = "div1" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div2" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div3" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div4" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<br><br><br><br><br><br>
+	<div id = "div5" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div6" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div7" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div8" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<br><br><br><br><br><br>
+	<div id = "div9" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div10" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div11" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<div id = "div12" ondrop = "drop(event)" ondragover="allowDrop(event)"></div>
+	<br><br><br><br><br><br><br>
+	<button onclick="clearInterval(time)">Done</button>
+	<br><br>
+
+
+	<img class = "piece" id = "puzzlePiece1" src = "img1-1.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece2" src = "img1-2.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece3" src = "img1-3.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece4" src = "img1-4.jpg" draggable = "true" ondragstart="drag(event)">
+	<br>
+	<img class = "piece" id = "puzzlePiece5" src = "img1-5.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece6" src = "img1-6.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece7" src = "img1-7.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece8" src = "img1-8.jpg" draggable = "true" ondragstart="drag(event)">
+	<br>
+	<img class = "piece" id = "puzzlePiece9" src = "img1-9.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece10" src = "img1-10.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece11" src = "img1-11.jpg" draggable = "true" ondragstart="drag(event)">
+	<img class = "piece" id = "puzzlePiece12" src = "img1-12.jpg" draggable = "true" ondragstart="drag(event)">
+</body>
+</html>

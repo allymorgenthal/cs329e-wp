@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Homework 10</title>
+</head>
+
+<body>
+	<h1>Astronomy Quiz</h1>
+	<form id = "quizForm" action = "" method = "post">
+
+	<div class = "TF">
+		<div class = "Q1">
+			1) According to Kepler the orbit of the earth is a circle with the sun at the center.<br>
+			<input type = "radio" id = "wrongTF1" name = "TF1">True<br>
+			<input type = "radio" id = "rightTF1" name = "TF1">False
+		</div>
+		<br>
+		<div class = "Q2">
+			2) Ancient astronomers did consider the heliocentric model of the solar system but rejected it because they could not detect parallax.<br>
+			<input type = "radio" id = "rightTF2" name = "TF2">True<br>
+			<input type = "radio" id = "wrongTF2" name = "TF2">False
+		</div>
+	</div>
+	<br>
+	<div class = "MC">
+		<div class = "Q3">
+			3) The total amount of energy that a star emits is directly related to its<br>
+			<input type = "checkbox" id = "wrongMC3" class = "MC3">surface gravity and magnetic field<br>
+			<input type = "checkbox" id = "rightMC3" class = "MC3">radius and temperature<br>
+			<input type = "checkbox" id = "wrongMC3" class = "MC3">pressure and volume<br>
+			<input type = "checkbox" id = "wrongMC3" class = "MC3">location and velocity<br>
+		</div>
+		<br>
+		<div class = "Q4">
+			4) Stars that live the longest are<br>
+			<input type = "checkbox" id = "wrongMC4" class = "MC4">high mass<br>
+			<input type = "checkbox" id = "wrongMC4" class = "MC4">high temperature<br>
+			<input type = "checkbox" id = "wrongMC4" class = "MC4">lots of hydrogen<br>
+			<input type = "checkbox" id = "rightMC4" class = "MC4">small mass<br>
+		</div>
+	</div>
+	<br>
+	<div class = "FiB">
+		<div class = "Q5">
+			5) A collection of a hundered billion stars, gas, and dust is called a 
+			<input type = "text" id = "Q5">.
+		</div>
+		<br>
+		<div class = "Q6">
+			6) The inverse of the Hubble's constant is a measure of the <input type = "text" id = "Q6"> of the universe.
+		</div>
+	</div>
+
+	<br>
+
+	<input type = "submit" value = "Grade" name = "gradeBtn"/>
+	<input type = "reset" value = "Clear"/>
+
+
+
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type = "text/javascript">
+
+		document.getElementById('quizForm').gradeBtn.onclick = correct;
+
+		var rightAnswers = 0;
+		
+		function correct() {
+
+			if (document.getElementById("rightTF1").checked == true) {
+				rightAnswers ++;
+			};
+			if (document.getElementById("rightTF2").checked == true) {
+				rightAnswers ++;
+			};
+			if (document.getElementById("rightMC3").checked == true) {
+				rightAnswers ++;
+			};
+			if (document.getElementById("rightMC4").checked == true) {
+				rightAnswers ++;
+			};
+			if ((document.getElementById("Q5").value).toUpperCase() === ("galaxy").toUpperCase()) {
+				rightAnswers ++;
+			};
+			if ((document.getElementById("Q6").value).toUpperCase() === ("age").toUpperCase())  {
+				rightAnswers ++;
+			};
+			var grade = ("Your grade is " + rightAnswers + "/6");
+			alert(grade);
+		};
+
+		$('.MC3').on('change', function () {
+			$('.MC3').not(this).prop('checked', false);
+		});
+
+		$('.MC4').on('change', function () {
+			$('.MC4').not(this).prop('checked', false);
+		});
+
+	</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

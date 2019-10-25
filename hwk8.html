@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homework 8 </title>
+	<meta charset = "utf-8"/>
+</head>
+
+<body>
+	<h1>Galaxies</h1>
+
+		<script type = "text/javascript">
+
+
+		var imageArray = new Array();
+		imageArray[0] = createImg("family.jpg",640,480);
+		imageArray[1] = createImg("sister.jpg",640,480);
+		imageArray[2] = createImg("friends.jpg",640,480);
+
+		function createImg(src, height, width) {
+			var img = document.createElement("img");
+			img.src = src;
+			img.height = height;
+			img.width = width;
+
+			return img;
+		};
+
+		var index = Math.floor(Math.random() * imageArray.length);
+
+		document.body.appendChild(imageArray[index]).style.border = "blue double 2px";
+	</script>
+</body>
+</html>

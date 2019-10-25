@@ -1,0 +1,16 @@
+h1 {
+	font-family: Verdana;
+	color: purple;
+}
+html {
+	background-color: lightblue;	
+}
+th {
+	font-size: 18pt;
+	font-family: Verdana;
+}
+td {
+	padding: 20px;
+	font-family: Verdana;
+	font-size: 12pt;
+}

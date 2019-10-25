@@ -1,0 +1,15 @@
+/*
+File: lorem.css
+Author: Allyson Morgenthal
+Date Created: 18 Jun 2018
+Date Modified: 18 Jun 2018
+*/
+
+body {
+	background-color: blue;
+	color: white;
+	margin: 100px;
+}
+img {
+	justify-content: center;
+}
